@@ -8,6 +8,31 @@ export class Question {
     this.type = data.type
     this.difficulty = data.difficulty
   }
+
+  get QuestionCardTemplate() {
+    return `
+    <section class="row text-center justify-content-center m-4">
+        <div class="col-6 card m-4">
+          <div>
+            <p class="m-4">${this.question}</p>
+          </div>
+        </div>
+      </section>
+      <section class="row d-flex justify-content-evenly text-center m-4">
+        <div class="col-3 card m-4">
+          <div>
+            <p class="m-4">${this.correctAnswer}</p>
+          </div>
+        </div>
+        <div class="col-3 card m-4">
+          <div>
+            <p class="m-4">${this.incorrectAnswer}</p>
+          </div>
+        </div>
+      </section>
+    `
+  }
+
 }
 
 

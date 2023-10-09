@@ -10,7 +10,7 @@ class QuestionsService {
     // console.log('got questions', response)
     console.log('GOT QUESTIONS', response.data.results)
     const newQuestions = response.data.results.map(questionPOJO => new Question(questionPOJO))
-    console.log('new questions', newQuestions);
+    // console.log('new questions', newQuestions);
     AppState.questions = newQuestions
     console.log('questions in AppState', AppState.questions);
   }

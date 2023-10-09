@@ -10,6 +10,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
     integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,800&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500&family=WindSong:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>trivia</title>
@@ -18,13 +21,38 @@
 <body>
   <!-- SECTION -->
   <header class="container-fluid">
-
+    <div class="row">
+      <div class="col-12 m-5">
+        <p class="shadows text-center">Animal Trivia</p>
+      </div>
+    </div>
   </header>
 
   <!-- SECTION -->
-  <main id="router-view" class="container-fluid">
+  <main id="router-view">
+    <div id="questionCard" class="container-fluid questionText">
 
+      <section class="row text-center justify-content-center m-4">
+        <div class="col-6 card m-4">
+          <div>
+            <p class="m-4">${this.question}</p>
+          </div>
+        </div>
+      </section>
+      <section class="row d-flex justify-content-evenly text-center m-4">
+        <div class="col-3 card m-4">
+          <div>
+            <p class="m-4">${this.correctAnswer}</p>
+          </div>
+        </div>
+        <div class="col-3 card m-4">
+          <div>
+            <p class="m-4">${this.incorrectAnswer}</p>
+          </div>
+        </div>
+      </section>
 
+    </div>
 
   </main>
 
