@@ -21,12 +21,12 @@ export class Question {
       <section class="row d-flex justify-content-evenly text-center m-4">
         <div class="col-3 card m-4">
           <div>
-            <p class="m-4">${this.correctAnswer}</p>
+            <p role="button" class="m-4">${this.correctAnswer}</p>
           </div>
         </div>
         <div class="col-3 card m-4">
           <div>
-            <p class="m-4">${this.incorrectAnswer}</p>
+            <p role="button" class="m-4">${this.incorrectAnswer}</p>
           </div>
         </div>
       </section>

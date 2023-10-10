@@ -5,10 +5,13 @@ import { setHTML } from "../utils/Writer.js"
 
 function _drawQuestions() {
   console.log('do i ever run?');
-  const questions = AppState.questions
+  const questions = AppState.questions[0]
   let content = ''
-  questions.forEach(question => content += question.QuestionCardTemplate)
-  setHTML('questionCard', content)
+  // questions.forEach(question => content += question.QuestionCardTemplate)
+  // const shifted = questions.shift()
+  // content = questions.shift(question => content = question.QuestionCardTemplate)
+  // content = shifted.QuestionCardTemplate
+  setHTML('questionCard', questions.QuestionCardTemplate)
 }
 
 export class QuestionsController {
